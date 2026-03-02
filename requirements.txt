@@ -32,22 +32,17 @@
 # langchain-community==0.3.26
 # -e .
 
-flask>=3.0.0
-python-dotenv>=1.0.0
-gunicorn>=23.0.0
-
-langchain>=0.3.0
-langchain-community>=0.3.0
-langchain-openai>=0.3.0
-langchain-pinecone>=0.2.0
-
-openai>=1.35.0
-pinecone-client>=3.2.2
-
-# This ensures we don't download huge GPU files on Render
---index-url https://download.pytorch.org/whl/cpu
-torch>=2.2.0
-sentence-transformers>=3.0.0
-
-pypdf>=5.0.0
-tiktoken>=0.7.0
+--extra-index-url https://download.pytorch.org/whl/cpu
+flask
+gunicorn
+python-dotenv
+langchain
+langchain-community
+langchain-openai
+langchain-pinecone
+openai
+pinecone-client
+sentence-transformers
+torch
+pypdf
+tiktoken
